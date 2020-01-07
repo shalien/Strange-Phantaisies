@@ -1,0 +1,23 @@
+decisions = {
+	add_shalien = {
+		ai = no
+		is_high_prio = yes
+		potential = {
+			is_playable = yes
+			NOT = { 
+				c_199301001 = {
+					host = ROOT
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			ROOT = {
+				c_199301001 = {
+					move_character = ROOT
+				}
+			}
+		}
+	}
+}
