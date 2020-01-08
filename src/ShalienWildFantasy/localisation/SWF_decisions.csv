@@ -1,7 +1,7 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-add_shalien;Add Shalien;;;;;;;;;;;;;x
-add_shalien_desc;Trigger the event to add Shalien to your court;;;;;;;;;;;;;;x
-add_shalien_desc_extra;;;;;;;;;;;;;;;x
+present_shalien;Add Shalien;;;;;;;;;;;;;x
+present_shalien_desc;Trigger the event to add Shalien to your court;;;;;;;;;;;;;;x
+present_shalien_desc_extra;;;;;;;;;;;;;;;x
 present_kitsune;Present a kitsune;;;;;;;;;;;;;x
 present_kitsune_desc;Present a kitsune at your court;;;;;;;;;;;;;;x
 present_kitsune_desc_extra;;;;;;;;;;;;;;;x

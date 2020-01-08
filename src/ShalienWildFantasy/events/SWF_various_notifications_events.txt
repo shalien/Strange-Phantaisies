@@ -16,12 +16,26 @@ character_event = {
 		trigger = { event_target:invited_character = { NOT = { has_character_flag = debutante } } }
 	}
 
+	desc = {
+		text = EVTDESC_SWFNE_1_shalien
+		trigger = {
+			event_target:invited_character = {
+				has_character_flag = shalien
+			}
+		}
+	}
+
 
 	option = {
 		name = EVTOPTA_SWFNE_1
 
 		trigger = {
 			OR = {
+				NOT = {
+					event_target:invited_character = {
+						has_character_flag = shalien
+					}
+				}
 				NOT = { ROOT = { has_law = succ_byzantine_elective } }  #Either not Imperial...
 				NOT = { #...Or there are no valid vassal candidates that can be commanders.
 					any_vassal = {
@@ -135,7 +149,26 @@ character_event = {
 	}
 
 	option = {
+		name = EVTOPTS_SWFNE_1
+
+		trigger = {
+			event_target:invited_character = {
+				has_character_flag = shalien
+			}
+		}
+
+		set_global_flag = SWF_shalien
+	}
+
+	option = {
 		name = EXCELLENT
+		trigger = {
+			NOT = {
+				event_target:invited_character = {
+					has_character_flag = shalien
+				}
+			}
+		}
 	}
 
 	option = {

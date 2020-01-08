@@ -1,0 +1,14 @@
+{
+  "name": "wild_fantasy",
+  "version": "0.0.1",
+  "description": "Script used to copy and manage mod ",
+  "scripts": {
+    "copy": "node ./bin/copy.js",
+    "deploy": "node ./bin/deploy.js"
+  },
+  "author": "Ophélien \"Shalien\" DUPARC",
+  "license": "ISC",
+  "directories": {
+    "bin": "bin"
+  }
+}
