@@ -14,10 +14,14 @@
 		easter_egg = yes
 		dna="bcffd0i00b0"
 		properties="kc0ddk000000000000000000000000000000"
-		1993.12.3={
-					birth=yes
-					effect = {
-						dynasty = none
-					}
+		93.12.3={
+			birth=yes
+			effect = {
+				dynasty = none
+			}
+		}
+		119.12.3={ immortal_age = 26 }
+		2993.12.3={
+			death=yes
 		}
 }

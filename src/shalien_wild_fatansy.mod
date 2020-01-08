@@ -1,4 +1,4 @@
 name = "Shalien's Wild Fantasy"
 path = "mod/ShalienWildFantasy"
-dependencies = { "Luxuria Fantasy" }
+dependencies = { "Luxuria Fantasia" }
 tags = { "Shalien" "Encounter" "Character" }

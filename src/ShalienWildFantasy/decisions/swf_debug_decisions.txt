@@ -1,23 +1,29 @@
 decisions = {
 	add_shalien = {
-		ai = no
-		is_high_prio = yes
-		potential = {
-			is_playable = yes
-			NOT = { 
-				c_199301001 = {
-					host = ROOT
+				ai = no
+				only_playable = yes
+
+				potential = {
+					NOT = {
+						has_religion_feature = religion_matriarchal
+					}
+				}
+				allow = {
+					NOT = {
+						has_character_modifier = in_seclusion
+					}
+				}
+				effect = {
+					c_199301001 = {
+						save_event_target_as = invited_character
+					}
+					character_event = { id = SWFNE.1 }
+				}
+				revoke_allowed = {
+					always = no
+				}
+				ai_will_do = {
+					factor = 0
 				}
 			}
 		}
-		allow = {
-		}
-		effect = {
-			ROOT = {
-				c_199301001 = {
-					move_character = ROOT
-				}
-			}
-		}
-	}
-}
