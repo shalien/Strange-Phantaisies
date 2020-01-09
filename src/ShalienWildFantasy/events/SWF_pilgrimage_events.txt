@@ -1,0 +1,25 @@
+namespace = SWFHF
+
+character_event = {
+    id = SWFHF.1
+
+    desc = {
+        trigger = {
+            check_variable = { which = "pilgrimage_person" value == 1 }
+        }
+
+    }
+
+    is_triggered_only = yes
+    trigger = {
+        religion_group = christian
+    }
+    fail_trigger_effect = {
+        character_event = { id = HF.41480 }
+    }
+
+    option = {
+       name = EXCELENT
+    }
+
+}

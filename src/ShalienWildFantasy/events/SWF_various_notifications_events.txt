@@ -176,6 +176,14 @@ character_event = {
 
 		hidden_tooltip = {
 			event_target:invited_character = {
+
+				IF = {
+					event_target:invited_character = {
+						has_character_flag = shalien
+					}
+
+					set_global_flag = SWF_shalien_killed
+				}
 				any_artifact = { destroy_artifact = yes }
 				death = {
 					death_reason = death_missing

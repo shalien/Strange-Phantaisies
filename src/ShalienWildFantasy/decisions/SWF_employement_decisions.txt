@@ -7,6 +7,7 @@ decisions = {
 		potential = {
 			NOT = {
 				has_global_flag = SWF_shalien
+				has_global_flag = SWF_shalien_killed
 			}
 		}
 
@@ -14,6 +15,7 @@ decisions = {
 			NOT = {
 				has_global_flag = SWF_shalien
 				has_character_modifier = in_seclusion
+				has_global_flag = SWF_shalien_killed
 			}
 		}
 		effect = {
@@ -32,8 +34,6 @@ decisions = {
 				trait=lustful
 				trait=ambitious
 				trait=zodiac_sagittarius
-				disallow_random_traits = yes
-				easter_egg = yes
 				dna="bcffd0i00b0"
 				properties="kc0ddk000000000000000000000000000000"
 				age = 26
