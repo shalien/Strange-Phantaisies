@@ -1,3 +1,6 @@
-## **Shalien's Wild Fantasy**
+## **Shalien's Re Expanded Fantasy**
 
-Our world is full of strange creatures and peoples , journey across the land can be dangerous . 
+The purpose of this mod is to rewrite from scratch everything coming to DZME and DWE to improve mod performances and update evry references to the lastest version of Luxuria Fantasia.
+
+The project is currently in alpha.
+

@@ -1,5 +1,5 @@
 {
-  "name": "wild_fantasy",
+  "name": "shaliens_re_expanded_fatansy",
   "version": "0.0.1",
   "description": "Script used to copy and manage mod ",
   "scripts": {
@@ -10,5 +10,8 @@
   "license": "ISC",
   "directories": {
     "bin": "bin"
+  },
+  "devDependencies": {
+    "adm-zip": "^0.4.13"
   }
 }

@@ -1,0 +1,74 @@
+### Use to prevent events from Dark World Extras from firing
+namespace = DWTRandom
+
+# Daugther masturbating (Daugther)
+# A female choose to masturbate and fear her Father migth find out
+# ROOT = Daugther
+narrative_event = {
+    id = DWTRandom.1
+
+    desc = DWTRandom1
+
+
+    trigger = {
+            age = 13
+            female = yes
+
+            NAND = {
+                trait = chaste
+                trait = celibate
+                prisoner = yes
+                is_pregnant = yes    
+            }
+    }
+
+    #Father is alive and will get an event
+    option = { 
+        name = DWTRandom1A
+        trigger = {
+            father = {
+                is_alive = yes
+            }
+        }
+        father = {
+            narrative_event = {
+                id = SREF_random.1
+                days = 3
+            }
+        }
+    }
+
+    #Father isn't alive and the event will stop here
+    option = { 
+        name = DWTRandom1B
+        trigger = {
+            father = {
+                is_alive = no
+            }
+        }
+    }
+
+
+}
+
+
+### Re Expanded Events
+
+namespace = SREF_random
+
+
+# Daugther masturbating DTRandom.1
+# ROOT = parent
+# FROM = child
+narrative_event = {
+    id = SREF_random.1
+
+    is_triggered_only = yes
+
+    desc = SREF_debugROOTFROM
+
+    option = {
+        name = PERFECT
+    }
+
+}

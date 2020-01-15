@@ -12,3 +12,6 @@ EVTDESC_SWFHF.1;Your pilgrimage just begin !;;;;;;;;;;;;;x
 EVTOPTA_SWFHF.1;Investigate;;;;;;;;;;;;;x
 EVTOPTA_TOOLTIP_SWFHF.1;You look further in the bushes;;;;;;;;;;;;;x
 EVTOPTB_SWFHF.1;Stay away from the bushes;;;;;;;;;;;;;x
+
+#SREF_debug
+SREF_debugROOTFROM;ROOT [ROOT.GetFullName] FROM [FROM.GetFullName];;;;;;;;;;;;;x
