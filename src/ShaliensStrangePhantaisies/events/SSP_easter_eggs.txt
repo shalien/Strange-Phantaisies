@@ -1,0 +1,116 @@
+namespace = SSP_EasterEgg
+
+chatacter_event = {
+    id = SSP_EasterEgg.1
+    hide_window = yes
+    ai = no
+
+    trigger = {
+        is_adult = yes
+        NOT = {
+            rtp_is_lower_baron = yes
+        }
+    }
+
+    mean_time_to_happen = {
+        years = 50
+        modifier = {
+            factor = 0.2
+            NOR = {
+                has_global_flag = ssp_shalien
+                has_global_flag = ssp_rondorallen
+                has_global_flag = ssp_moanatari
+                has_global_flag = ssp_linoyd
+            }
+        }
+    }
+
+    immediate = {
+        random_list = {
+            100 = {} #Sorry
+            25 = { #Shalien
+                
+            trigger = {
+                    NOR = {
+                        has_global_flag = ssp_shalien
+                        has_global_flag = ssp_shalien_dead
+                    }
+                }
+                   narrative_event = {
+                       id = SSP_EasterEgg.100
+                   } 
+            }
+        }
+    }
+}
+
+# Shalien
+narrative_event = {
+    id = SSP_EassterEgg.100
+    picture = {
+        a_silly_placeholder
+    }
+
+    title = SSPEasterEggShalienTitle
+    desc = SSPEasterEggShalien
+
+    is_triggered_only = yes
+
+    option = {
+        name = SSPEasterEggShalienStay
+        wealth= 10
+        custom_tooltip = {
+            text = SSPEasterEggShalien
+        }
+        character_event = { id = SSP_EasterEgg.1000 }
+    }
+
+    option = {
+        name = SSPEasterEggShalienKill
+        custom_tooltip = {
+            text = SSPEasterEggShalienKillText
+            set_global_flag = ssp_shalien_dead
+        }
+    }
+}
+
+# Creation Shalien
+character_event = {
+    id = SSP_EasterEgg.1000
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        create_character = {
+            random_traits = no
+            name=Shalien
+            dynasty=none
+            female = no
+            religion=catholic
+            culture=frankish
+            diplomacy=3
+            stewardship=10
+            intrigue=10
+            trait=lefthanded
+            trait=gamer
+            trait=lustful
+            trait=ambitious
+            trait=zodiac_sagittarius
+            dna="bcffd0i00b0"
+            properties="kc0ddk000000000000000000000000000000"
+            age = 26
+            health= 6
+            fertility = 10
+            flag = society_join_block
+        }
+        new_character = {
+            remove_trait = slow
+            remove_trait = imbecile
+            remove_trait = dull
+            set_character_flag = ssp_npc_shalien
+            set_global_flag = ssp_shalien
+
+            add_friend = ROOT
+        }
+    }
+}
