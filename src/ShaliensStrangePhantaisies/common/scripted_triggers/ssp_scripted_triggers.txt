@@ -1,0 +1,7 @@
+#
+# Check if SSP has been started
+#
+# Credit : Luxuria Fantasia
+ssp_started = {
+    has_global_flag = ssp_started
+}
