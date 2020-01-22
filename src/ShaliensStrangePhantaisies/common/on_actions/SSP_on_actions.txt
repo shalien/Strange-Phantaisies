@@ -1,7 +1,0 @@
-#For compatibility
-
-on_startup = {
-    events = {
-        SSP.1 # Setup Flag for SSP
-    }
-}

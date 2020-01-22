@@ -1,7 +1,0 @@
-.vscode
-.gitkeep
-./build/
-packahe-lock.json
-*.log
-./node_modules/
-*.lock

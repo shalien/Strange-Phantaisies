@@ -1,6 +1,0 @@
-build/*
-build
-*.log
-*.lock
-node_modules
-.vscode
