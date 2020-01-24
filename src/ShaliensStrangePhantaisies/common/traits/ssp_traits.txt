@@ -1,0 +1,21 @@
+
+masturbator = {
+    sex_appeal_opinion = 10
+    fertility = 5
+
+    potential = {
+        age = 12
+    }
+
+    personality = yes
+
+    diplomacy = -1
+
+    opposites = {
+        chaste
+    }
+
+    opposite_opinion = -15
+ 
+    
+}

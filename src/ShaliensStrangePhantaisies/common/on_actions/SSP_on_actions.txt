@@ -1,7 +1,13 @@
 #For compatibility
-
 on_startup = {
     events = {
-        SSP.1 # Setup Flag for SSP
+        SSP.1		# Setup Flag for SSP
+    }
+}
+
+on_adolescence = {
+    random_events = {
+        100 = {}
+        10 = SSP_Masturbation.1		# A Teen discover masturbation
     }
 }

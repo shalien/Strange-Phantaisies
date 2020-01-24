@@ -10,7 +10,7 @@ character_event = {
     
     trigger = {
         NOR = {
-            has_global_glag = ssp_started
+            has_global_flag = ssp_started
         }
     }
 
