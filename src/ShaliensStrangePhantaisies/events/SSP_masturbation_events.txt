@@ -12,6 +12,7 @@ character_event = {
         NOR = {
             trait = chaste
             trait = eunuch
+            ssp_has_masturbated = yes
         }
     }
 
@@ -41,9 +42,8 @@ character_event = {
 
     option = {
         name = SSPMasturbation1Resist
-        custom_tooltip = {
+        hidden_tooltip = {
             text = SSPMasturbation1ResistTip
-            set_character_flag = { flag = ssp_resist_masturbation years = 6 }
         
             
         if = {
@@ -187,7 +187,6 @@ character_event = {
         name = SSPMasturbation100Resist
         custom_tooltip = {
        #    text = SSPMasturbation1ResistTip
-            set_character_flag = { flag = ssp_resist_masturbation years = 6 }
             
         if = {
             limit = {
@@ -253,28 +252,36 @@ character_event = {
                         }
                     }
 
-                    custom_tooltip = {
-                        text = SSPMasturbation101Good
-                        character_event = {  id = SSP_Masturbation.102 } #Cumming Good 
+                    hidden_tooltip = {
+                        # text = SSPMasturbation101Good
+                        character_event = {  
+                            id = SSP_Masturbation.102 
+                        } #Cumming Good 
                     }
       
                 }
 
                 24 = { 
-                    custom_tooltip = {
-                        character_event = { id = SSP_Masturbation.103 } #Cumming Bad
+                    hidden_tooltip = {
+                        character_event = {
+                             id = SSP_Masturbation.103 
+                            } #Cumming Bad
                 }
                 }
 
                 24 = {
-                    custom_tooltip = {
-                    character_event = { id = SSP_Masturbation.104 } #Cumming Get Caught
+                    hidden_tooltip = {
+                    character_event = { 
+                        id = SSP_Masturbation.104
+                     } #Cumming Get Caught
                 }
                 }
 
                 2 = { 
                     custom_tooltip = {
-                    character_event = { id = SSP_Masturbation.105 } #Cumming Die
+                    character_event = {
+                         id = SSP_Masturbation.105 
+                        } #Cumming Die
                 }
                 }
             }
@@ -285,7 +292,6 @@ character_event = {
 
             custom_tooltip = {
                 #    text = SSPMasturbation1ResistTip
-                     set_character_flag = { flag = ssp_resist_masturbation years = 6 }
                      
         if = {
             limit = {
@@ -337,7 +343,10 @@ character_event = {
                 
             }
             
-            set_character_flag = { flag = ssp_masturbated days = 30 }
+          add_character_modifier = { 
+              name = good_masturbator 
+              duration = 30 
+            }
         }
 
         ai_chance = {
@@ -350,7 +359,6 @@ character_event = {
 
         custom_tooltip = {
             #    text = SSPMasturbation1ResistTip
-                 set_character_flag = { flag = ssp_hate_masturbation }
                  
     if = {
         limit = {

@@ -5,3 +5,15 @@
 ssp_started = {
     has_global_flag = ssp_started
 }
+
+
+#
+# Check if the character has masturbated recently 
+#
+ssp_has_masturbated = {
+    OR = {
+        has_character_modifier = good_masturbation
+        has_character_modifier = normal_masturbation
+        has_character_modifier = bad_masturbation
+    }
+}
