@@ -10,3 +10,20 @@ on_adolescence = {
         10 = SSP_Masturbation.1		# A Teen discover masturbation
     }
 }
+
+
+on_adulthood = {
+    random_events = {
+        10 = SSP_Masturbation.1		# A Adult discover masturbation
+    }
+}
+
+on_yearly_pulse = {
+    random_events = {
+        health = {
+            delay = 15
+            25000 = 0
+            250 = SSP_Masturbation.1001 #A stressed character try to masturbate
+        }
+    }
+}

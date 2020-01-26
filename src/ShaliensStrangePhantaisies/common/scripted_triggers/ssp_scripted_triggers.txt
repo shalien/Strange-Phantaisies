@@ -7,8 +7,28 @@ ssp_started = {
 }
 
 
+ssp_can_masturbate = {
+    age = 12
+
+    ssp_has_masturbated = no
+
+    NOT = {
+        trait = chaste
+    }
+
+    trigger_if = {
+        limit = {
+            is_female = no
+        }
+        NOT = {
+            trait = eunuch
+        }
+    }
+}
+
+
 #
-# Check if the character has masturbated recently 
+# Check if the character has masturbated recently
 #
 ssp_has_masturbated = {
     OR = {

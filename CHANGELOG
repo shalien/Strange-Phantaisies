@@ -1,3 +1,19 @@
+Version 0.1.1
+
+Events : 
+- Rewrited the scripted_trigger for checking masturbation is avaible
+- Added ai_chance for all options to prevent ai softlocking in the event chain
+- Increased the probability ai will pick the "do" path
+- Increased the chance of getting the "masturbator" trait
+- Added a chance for a good masturbation to remove the "stressed" modifier
+- Added two new starting events for the events chain
+- Added a new event for letting stressed characters masturbate to loose the stressed trait
+
+What's next ?
+- Adding new diplomacy option when you're a masturbator
+- Adding new event related to the masturbation
+- Adding related pictures for the events
+
 Version 0.1.0
 First public version
 
