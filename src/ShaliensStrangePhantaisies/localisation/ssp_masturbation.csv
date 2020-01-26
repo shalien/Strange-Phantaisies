@@ -1,4 +1,11 @@
 #CODE;English;;;;;;;;;;;;;x
+#
+good_masturbation;Good masturbation;;;;;;;;;;;;;x
+bad_masturbation;Awful masturbation;;;;;;;;;;;;;x
+caught_masturbating;Caught masturbation;;;;;;;;;;;;;x
+get_caught_masturbating;Caught masturbating;;;;;;;;;;;;;x
+caught_someone_masturbating;Caught masturbator;;;;;;;;;;;;;x
+#
 SSPMasturbation1Title;A changing body;;;;;;;;;;;;;x
 SSPMasturbation1Desc;Since you became twelve, you feel a strange warmth coming from your nether region...;;;;;;;;;;;;;x
 #
@@ -36,3 +43,14 @@ masturbator;Masturbator;;;;;;;;;;;;;x
 masturbator_desc;This person like to pleasure [This.GetHerselfHimself];;;;;;;;;;;;;x
 #
 SSPMasturbation101Good;appreciate the experience;;;;;;;;;;;;;x
+#
+SSPMasturbation102GoodTip;You may became a masturbator;;;;;;;;;;;;;x
+#
+SSPMasturbation103Title;Not so fun time;;;;;;;;;;;;;x
+SSPMasturbation103Desc;Well, if don't feel much better after masturbating. You wonder if you're not even more stressed than before;;;;;;;;;;;;;x
+SSPMasturbation103Better; I hope that will be better next time;;;;;;;;;;;;;x
+SSPMasturbation103Bad;It's was awful, I will never do that again;;;;;;;;;;;;;x
+#
+SSPMasturbation104Title;Please, don't;;;;;;;;;;;;;x
+SSPMasturbation104Desc;As the pleasure increase, you hear your door open...;;;;;;;;;;;;;x
+SSPMasturbation104Dont;No ! Stop ! Don't look !;;;;;;;;;;;;;x

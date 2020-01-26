@@ -27,7 +27,7 @@ character_event = {
 
     immediate = {
         random_list = {
-            1000 = {} #Sorry
+            100 = {} #Sorry
             25 = { #Shalien
                 
             trigger = {
@@ -85,9 +85,11 @@ character_event = {
             female = no
             religion=catholic
             culture=frankish
-            diplomacy=3
-            stewardship=10
-            intrigue=10
+            attributes = {
+                diplomacy=3
+                stewardship=10
+                intrigue=10
+            }
             trait=lefthanded
             trait=gamer
             trait=lustful

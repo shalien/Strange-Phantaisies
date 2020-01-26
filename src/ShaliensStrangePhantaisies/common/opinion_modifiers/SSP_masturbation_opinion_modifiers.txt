@@ -1,0 +1,7 @@
+get_caught_masturbating = {
+    opinion = -25
+}
+
+caught_someone_masturbating = {
+    opinion = -25
+}

@@ -11,7 +11,11 @@ character_event = {
     trigger = {
         NOR = {
             trait = chaste
-            trait = eunuch
+            AND = {
+                trait = eunuch
+                is_female = no
+            }
+
             ssp_has_masturbated = yes
         }
     }
@@ -23,11 +27,11 @@ character_event = {
             text = SSPMasturbation1ContinueTip
         }
 
-        
+
         ai_chance = {
             factor = 10
             modifier = {
-                factor = 1
+                factor = 1.1
                 AND = {
                     trait = lustful
                 }
@@ -42,22 +46,24 @@ character_event = {
 
     option = {
         name = SSPMasturbation1Resist
-        hidden_tooltip = {
+
+
+        custom_tooltip = {
             text = SSPMasturbation1ResistTip
-        
-            
-        if = {
-            limit = {
-                NOT = { trait = chaste }
+
+
+            if = {
+                limit = {
+                    NOT = { trait = chaste }
+                }
+
+                random = {
+                    chance = 30
+                    add_trait = chaste
+                }
+
             }
 
-            random = {
-                chance = 30
-                add_trait = chaste
-            }
-    
-        }
-       
         }
 
         ai_chance = {
@@ -72,13 +78,13 @@ character_event = {
     }
 
 
-    
+
 }
 
 # A night to remember
 character_event = {
     id = SSP_Masturbation.100
-    
+
     is_triggered_only = yes
 
     title = SSPMasturbation100Title
@@ -123,7 +129,7 @@ character_event = {
             id = SSP_Masturbation.101
         }
     }
-    
+
     #Continue Male
     option = {
         name = SSPMasturbation100ContinueMale
@@ -156,7 +162,7 @@ character_event = {
         name = SSPMasturbation100Wait
 
         custom_tooltip = {
-         set_character_flag = ssp_wait_masturbation
+            set_character_flag = ssp_wait_masturbation
         }
 
         trigger = {
@@ -186,22 +192,22 @@ character_event = {
     option = {
         name = SSPMasturbation100Resist
         custom_tooltip = {
-       #    text = SSPMasturbation1ResistTip
-            
-        if = {
-            limit = {
-                NOT = { trait = chaste }
+            #    text = SSPMasturbation1ResistTip
+
+            if = {
+                limit = {
+                    NOT = { trait = chaste }
+                }
+
+                random = {
+                    chance = 30
+                    add_trait = chaste
+                }
+
             }
 
-            random = {
-                chance = 30
-                add_trait = chaste
-            }
-    
         }
-       
-        }
-       
+
 
         ai_chance = {
             factor = 25
@@ -243,8 +249,9 @@ character_event = {
     option = {
         name = SSPMasturbation101Cumming
 
-        random_list = {
-                50 = { 
+        hidden_tooltip = {
+            random_list = {
+                50 = {
                     modifier = {
                         factor = 2
                         AND = {
@@ -252,68 +259,61 @@ character_event = {
                         }
                     }
 
-                    hidden_tooltip = {
-                        # text = SSPMasturbation101Good
-                        character_event = {  
-                            id = SSP_Masturbation.102 
-                        } #Cumming Good 
-                    }
-      
-                }
+                    # text = SSPMasturbation101Good
+                    character_event = {
+                        id = SSP_Masturbation.102
+                    } #Cumming Good
 
-                24 = { 
-                    hidden_tooltip = {
-                        character_event = {
-                             id = SSP_Masturbation.103 
-                            } #Cumming Bad
-                }
                 }
 
                 24 = {
-                    hidden_tooltip = {
-                    character_event = { 
-                        id = SSP_Masturbation.104
-                     } #Cumming Get Caught
-                }
-                }
-
-                2 = { 
-                    custom_tooltip = {
                     character_event = {
-                         id = SSP_Masturbation.105 
-                        } #Cumming Die
+                        id = SSP_Masturbation.103
+                    } #Cumming Bad
                 }
+
+                24 = {
+                    character_event = {
+                        id = SSP_Masturbation.104
+                    } #Cumming Get Caught
                 }
+
+                #    2 = {
+                #        character_event = {
+                #            id = SSP_Masturbation.105
+                #        } #Cumming Die
+                #    }
             }
         }
+    }
 
-        option = {
-            name = SSPMasturbation101Stop
+    option = {
+        name = SSPMasturbation101Stop
 
-            custom_tooltip = {
-                #    text = SSPMasturbation1ResistTip
-                     
-        if = {
-            limit = {
-                NOT = { trait = chaste }
-            }
+        custom_tooltip = {
+            #    text = SSPMasturbation1ResistTip
 
-            random = {
-                chance = 30
-                add_trait = chaste
-            }
-    
-        }
-       
-                 }
-               
-
-            trigger = {
-                NOR = {
-                    trait = lustful
+            if = {
+                limit = {
+                    NOT = { trait = chaste }
                 }
+
+                random = {
+                    chance = 30
+                    add_trait = chaste
+                }
+
+            }
+
+        }
+
+
+        trigger = {
+            NOR = {
+                trait = lustful
             }
         }
+    }
 }
 
 character_event = {
@@ -327,55 +327,166 @@ character_event = {
     option = {
         name = SSPMasturbation102Good
 
-        custom_tooltip = {
-            if = {
-                
-                limit = {
-                    NOT = {
-                        trait = masturbator
-                    }
-                }
-
-                random = {
-                    chance = 25
-                    add_trait = masturbator
-                }
-                
-            }
-            
-          add_character_modifier = { 
-              name = good_masturbator 
-              duration = 30 
-            }
-        }
-
         ai_chance = {
             factor = 75
         }
+
+        if = {
+
+            limit = {
+                NOT = {
+                    trait = masturbator
+                }
+            }
+
+            random = {
+                chance = 25
+                add_trait = masturbator
+            }
+
+        }
+
+        add_character_modifier = {
+            modifier = good_masturbation
+            years = 1
+        }
+
     }
 
     option = {
         name = SSPMasturbation102Bad
 
         custom_tooltip = {
-            #    text = SSPMasturbation1ResistTip
-                 
-    if = {
-        limit = {
-            NOT = { trait = chaste }
-        }
+            # text = SSPMasturbation1ResistTip
 
-        random = {
-            chance = 30
-            add_trait = chaste
-        }
+            if = {
+                limit = {
+                    NOT = { trait = chaste }
+                }
 
-    }
-   
-             }
+                random = {
+                    chance = 30
+                    add_trait = chaste
+                }
+
+            }
+
+        }
 
         ai_chance = {
             factor = 25
         }
     }
+}
+
+character_event = {
+    id = SSP_Masturbation.103
+
+    is_triggered_only = yes
+
+    title = SSPMasturbation103Title
+    desc = SSPMasturbation103Desc
+
+    option = {
+        name = SSPMasturbation103Better
+
+        if = {
+            limit = {
+                NOT = { trait = stressed }
+            }
+
+            random = {
+                15 = {
+                    trait = stressed
+                }
+            }
+        }
+
+        add_character_modifier = {
+            modifier = bad_masturbation
+            years = 1
+        }
+
+        ai_chance = {
+            factor = 50
+        }
+    }
+
+    option = {
+        name = SSPMasturbation103Bad
+
+        if = {
+            limit = {
+                NOT = { trait = chaste }
+            }
+
+            random = {
+                chance = 30
+                add_trait = chaste
+            }
+
+        }
+
+        ai_chance = {
+            factor = 50
+        }
+
+    }
+}
+
+character_event = {
+    id = SSP_Masturbation.104
+
+    is_triggered_only = yes
+
+    title = SSPMasturbation104Title
+    desc = SSPMasturbation104Desc
+
+    trigger = {
+        any_close_relative = {
+            count = 1
+        }
+    }
+
+    immediate= {
+        any_close_relative = {
+            limit = {
+                is_alive = yes
+                prisoner = no
+
+            }
+            save_event_target_as = observer
+        }
+    }
+
+    option = {
+        name = SSPMasturbation104Dont
+
+        show_portrait = event_target:observer
+
+        reverse_opinion = {
+            modifier = caught_someone_masturbating
+            who = event_target:observer
+            years = 1
+        }
+
+        event_target:observer = {
+            reverse_opinion = {
+                modifier = get_caught_masturbating
+                who = ROOT
+                years = 1
+            }
+        }
+
+        add_character_modifier = {
+            modifier = caught_masturbating
+            years = 1
+        }
+
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+
 }

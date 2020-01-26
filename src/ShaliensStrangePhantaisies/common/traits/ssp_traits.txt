@@ -1,16 +1,15 @@
 
 masturbator = {
+
+    random = no
+    customizer = no
+
     sex_appeal_opinion = 10
-    fertility = 5
-
-    potential = {
-        age = 12
-    }
-
-    personality = yes
-
+    fertility = 0.5
     diplomacy = -1
 
+    personality = yes
+    
     opposites = {
         chaste
     }
