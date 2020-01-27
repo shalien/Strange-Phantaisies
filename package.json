@@ -1,6 +1,6 @@
 {
   "name": "shaliens_ck2_mod_manager",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Script used to copy and manage mod ",
   "scripts": {
     "copy": "node ./bin/copy.js",
