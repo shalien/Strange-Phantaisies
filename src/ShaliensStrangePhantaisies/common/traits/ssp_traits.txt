@@ -1,8 +1,8 @@
 
 masturbator = {
 
-    random = no
-    customizer = no
+    random = yes
+    customizer = yes
 
     sex_appeal_opinion = 10
     fertility = 0.5
@@ -14,7 +14,20 @@ masturbator = {
         chaste
     }
 
-    opposite_opinion = -15
- 
-    
+    opposite_opinion = -15   
+}
+
+uterus_didelphys = {
+
+    potential = {
+        is_female = yes
+    }
+
+    random = yes
+    customizer = yes
+
+    fertility = 0.10
+
+    birth = 1000
+
 }

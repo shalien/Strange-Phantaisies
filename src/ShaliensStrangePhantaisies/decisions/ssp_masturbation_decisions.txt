@@ -1,0 +1,32 @@
+# FROM taker aka ME
+# ROOT target aka victim
+
+
+targeted_decisions = {
+
+    masturbate = {
+        ai_check_interval = 24
+
+        filter = self
+
+        potential = {
+            trait = masturbator
+        }
+
+        allow = {
+            ssp_can_masturbate = yes
+        }
+
+        effect = {
+            character_event = {
+                id = SSP_Masturbation.1
+                days = 14
+            }
+        }
+
+        ai_will_do = {
+                factor = 0.5
+        }
+    }
+
+}

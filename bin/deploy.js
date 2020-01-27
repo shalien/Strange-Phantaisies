@@ -22,6 +22,8 @@ zipArchive.addLocalFolder(srcFolder, "", (filename) => {
     return !filename.toLowerCase().endsWith('.gitkeep');
 });
 
+zipArchive.addLocalFile('CREDITS', "ShaliensStrangePhantaisies");
+
 const data = zipArchive.toBuffer();
 
 zipArchive.writeZip(`${buildFolder}/${zipName}_${package.version}.zip`);

@@ -6,4 +6,12 @@ spriteTypes = {
         norefcount = yes
         effectFile = "gfx/FX/buttonstate.lua"
     }
+
+    spriteType = {
+        name = "GFX_trait_uterus_didelphys"
+        texturefile = "gfx/traits/ssp_uterus_didelphys.tga"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
 }
