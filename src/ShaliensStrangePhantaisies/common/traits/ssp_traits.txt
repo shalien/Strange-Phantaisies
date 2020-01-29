@@ -27,6 +27,7 @@ uterus_didelphys = {
     customizer = yes
 
     fertility = 0.10
+    health = -1.0
 
     birth = 1000
 
