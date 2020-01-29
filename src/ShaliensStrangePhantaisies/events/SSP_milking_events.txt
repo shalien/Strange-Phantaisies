@@ -1,0 +1,64 @@
+namespace = SSP_Milking
+
+character_event = {
+    id = SSP_Milking.1
+    desc = SSPMilking1desc #Heard of a hucow in the realm
+
+    trigger = {
+
+        has_global_flag = DW_Crusader_Milk_Present
+
+        is_ruler = yes
+
+        NOT = { has_character_flag = ssp_milking_rejected }
+
+        any_realm_character = {
+                is_female = yes
+                age = 16
+                prisoner = no
+                trait = hucow
+        }
+    }
+
+    immediate = {
+        random_realm_character = {
+            limit = {
+                is_female = yes
+                age = 16
+                prisoner = no
+                trait = hucow
+            }
+            save_event_target_as = subject
+        }
+    }
+
+    #I must look into that
+    option = {
+        name = SSPMilking1Look
+
+        ai_chance = {
+            factor = 25
+        }
+    }
+
+    option = {
+        name = SSPMilking1MaybeLater
+
+        ai_chance = {
+            factor = 25
+        }
+    }
+
+    option = {
+        name SSPMilking1MaybeNever
+
+        custom_tool = {
+            text = SSPMilking1MaybeNeverTip
+            set_character_flag = ssp_milking_rejected
+        }
+
+        ai_chance = {
+            factor = 50
+        }
+    }
+}

@@ -1,5 +1,5 @@
 name = "Shalien's Strange Phantaisies"
 path = "mod/ShaliensStrangePhantaisies"
 user_dir="ShaliensStrangePhantaisies"
-dependencies = { "Luxuria Fantasia" "Dark World: Extras" "DZM Expanded" }
-tags = { "Shalien" "Rework" "Sex" "Rape" }
+dependencies = { "Luxuria Fantasia" "Crusader Milk" }
+tags = { "Shalien" "Strange Phantaisies" "trait" "sex" "events" }

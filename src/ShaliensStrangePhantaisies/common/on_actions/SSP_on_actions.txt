@@ -20,6 +20,9 @@ on_adulthood = {
 
 on_yearly_pulse = {
     random_events = {
+
+        250 = SSP_Milking.1
+
         health = {
             delay = 15
             25000 = 0
