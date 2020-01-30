@@ -9,19 +9,17 @@ character_event = {
     min_age = 6
     max_age = 10
     only_capable = yes
-    is_sick = no
+    prisoner = no
 
     immediate = {
-        random_close_relative = {
+        random_courtier = {
             is_incapable = no
-            is_sick = no
-            is_chaste = no
+            prisoner = no
 
-            IF = {
-                limit = {
-                    is_female = no
-                    trait = eunuch
-                }
+            NOR = {
+                character = ROOT
+                trait = chaste
+                trait = eunuch
             }
 
         }
@@ -30,17 +28,32 @@ character_event = {
 
 
     trigger = {
-        any_close_relative = {
-            is_incapable = no
-            is_sick = no
-            is_chaste = no
+        any_courtier = {
 
-            IF = {
-                limit = {
-                    is_female = no
-                    trait = eunuch
-                }
+            is_incapable = no
+            prisoner = no
+
+            NOR = {
+                character = ROOT
+                trait = chaste
+                trait = eunuch
             }
+        }
+    }
+
+    option = {
+        name = SSPVoyeur1000SearchRowdy
+
+        ai_chance = {
+            factor = 50
+        }
+
+        tooltp_info = {
+            trait = rowdy
+        }
+
+        trigger = {
+            trait = rowdy
         }
     }
 
@@ -54,6 +67,10 @@ character_event = {
         trigger = {
             NOR = {
                 trait = shy
+                trait = timid
+                trait = rowdy
+                trait = curious
+                trait = willful
             }
         }
     }
@@ -67,6 +84,9 @@ character_event = {
 
         trigger = {
             NOR = {
+                trait = rowdy
+                trait = curious
+                trait = willful
             }
         }
     }

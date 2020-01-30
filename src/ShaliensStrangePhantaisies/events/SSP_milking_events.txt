@@ -6,6 +6,7 @@ character_event = {
 
     is_triggered_only = yes
     has_global_flag = DW_Crusader_Milk_Present
+    only_playable = yes
 
     trigger = {
 
@@ -51,7 +52,7 @@ character_event = {
     }
 
     option = {
-        name SSPMilking1MaybeNever
+        name = SSPMilking1MaybeNever
 
         custom_tool = {
             text = SSPMilking1MaybeNeverTip

@@ -1,3 +1,24 @@
+Version 0.1.3
+
+General :
+- Removed version 0.1.1 from LL (still avaible on github)
+
+Events :
+- Modified all the current event to optimize the cpu usage of the mod
+- Removed the redundant modifier on_action for the "Release steam" event
+- Added two new events chains "Noises in the Dark" and "The Human Cow". This two chains are just started and will be improved in the next versions
+- "The Human Cow" event require "Crusader Milk" ( https://www.loverslab.com/topic/121182-mod-ck2-crusader-milk-a-dark-world-fantasy-submod/?do=findComment&comment=2868953 )
+
+Localisations :
+- Switched to DeepL to translate the french sentences into a better english
+- Rewrited some of the localisation with the help of Deepl
+
+What's next ?
+- Adding related pictures for the events (Yes, it's coming)
+- Improvement for "The Human Cow" and "Noises in the Dark"
+
+---
+
 Version 0.1.2
 
 General : 
@@ -14,7 +35,7 @@ What's next ?
 - Adding new event related to the masturbation
 - Adding related pictures for the events
 
-
+---
 
 Version 0.1.1
 
@@ -31,6 +52,8 @@ What's next ?
 - Adding new diplomacy option when you're a masturbator
 - Adding new event related to the masturbation
 - Adding related pictures for the events
+
+---
 
 Version 0.1.0
 First public version

@@ -24,8 +24,6 @@ on_yearly_pulse = {
         250 = SSP_Milking.1
 
         health = {
-            delay = 15
-            25000 = 0
             250 = SSP_Masturbation.1001 #A stressed character try to masturbate
         }
     }
