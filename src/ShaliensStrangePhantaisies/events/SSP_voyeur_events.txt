@@ -1,0 +1,74 @@
+namespace = SSP_Voyeur
+
+character_event = {
+    id = SSP_Voyeur.1000
+    desc = SSPVoyeur1000Desc
+
+    is_triggered_only = yes
+
+    min_age = 6
+    max_age = 10
+    only_capable = yes
+    is_sick = no
+
+    immediate = {
+        random_close_relative = {
+            is_incapable = no
+            is_sick = no
+            is_chaste = no
+
+            IF = {
+                limit = {
+                    is_female = no
+                    trait = eunuch
+                }
+            }
+
+        }
+        save_event_target_as = victim
+    }
+
+
+    trigger = {
+        any_close_relative = {
+            is_incapable = no
+            is_sick = no
+            is_chaste = no
+
+            IF = {
+                limit = {
+                    is_female = no
+                    trait = eunuch
+                }
+            }
+        }
+    }
+
+    option = {
+        name = SSPVoyeur1000Search
+
+        ai_chance = {
+            factor = 50
+        }
+
+        trigger = {
+            NOR = {
+                trait = shy
+            }
+        }
+    }
+
+    option = {
+        name = SSPVoyeur1000Hide
+
+        ai_chance = {
+            factor = 50
+        }
+
+        trigger = {
+            NOR = {
+            }
+        }
+    }
+
+}

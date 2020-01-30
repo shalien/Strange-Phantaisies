@@ -4,9 +4,10 @@ character_event = {
     id = SSP_Milking.1
     desc = SSPMilking1desc #Heard of a hucow in the realm
 
-    trigger = {
+    is_triggered_only = yes
+    has_global_flag = DW_Crusader_Milk_Present
 
-        has_global_flag = DW_Crusader_Milk_Present
+    trigger = {
 
         is_ruler = yes
 
